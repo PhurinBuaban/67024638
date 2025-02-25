@@ -1,0 +1,262 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+    padding: 0.5rem 1rem;
+    background-color: rgb(13, 231, 231);
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    padding: 0;
+    width: 100%;
+}
+
+.logo {
+    padding-left: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 0;
+}
+
+.menu li {
+    margin: 0 1.5rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Main Content */
+.maincontent {
+    background-color: rgb(245, 245, 245);
+    padding: 4rem 0;
+}
+
+.maincontent-con {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontent-info {
+    flex: 1;
+    padding: 2rem;
+    max-width: 500px;
+}
+
+.maincontent-info h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.maincontent-info p {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.maincontent-info .maincontent-btn {
+    background-color: rgb(255, 196, 47);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.maincontent-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.maincontent-img img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Section */
+.content-title {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.content-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+}
+
+/* กล่องสินค้า */
+.content-item {
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-5px);
+}
+
+.content-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-item h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.content-item p {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.content-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer-top {
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #d0cece;
+    color: white;
+}
+
+.footer-top-con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-top-item h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-top-item-con {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footer-top-item-con .date {
+    background-color: white;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.footer-buttom {
+    background-color: #d0cece;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .maincontent-con {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maincontent-info {
+        padding: 1rem;
+    }
+
+    .maincontent-img img {
+        max-width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.footer-item {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
